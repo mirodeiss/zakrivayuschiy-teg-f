@@ -21,7 +21,7 @@
   background-image: var(--page-background-image, none);
   background-size: cover;
   background-attachment: fixed;
-  font-variation-settings: var(--page-main-font-weight, 400);
+  font-variation-settings: "wght" var(--page-main-font-weight, 400);
   min-inline-size: 320px;
   min-block-size: 100dvb;
   margin: 0 auto;
@@ -61,17 +61,18 @@
 .header__logo-title {
   font-family: var(--fantasy-font-family);
   font-style: normal;
-  font-weight: var(--page-main-font-weight);
+  font-variation-settings: var(--page-main-font-weight);
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   padding-block-start: clamp(7.625rem, 7.273rem + 1.502vw, 8.625rem);
 }
 
 .header__text {
-  font-weight: var(--page-main-font-weight);
-  font-family: var( --fantasy-font-family);
+  font-variation-settings: var(--page-main-font-weight);
+  font-family: var(--fantasy-font-family);
   font-style: normal;
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
   padding-block-start: 17px;
+  text-transform: uppercase;
 }
 
 
@@ -91,7 +92,7 @@
 
 /* button */
 .theme-menu__button {
-  font-family: var( --fantasy-font-family);
+  font-family: var(--fantasy-font-family);
   position: relative;
   border: none;
   font-size: 14px;
@@ -154,7 +155,7 @@
 
 /* end main */
 
-.card {
+.cards {
   display: grid;
   gap: 50px;
 
@@ -169,8 +170,7 @@
   padding: 5px 12px 3px 12px;
   font-size: 18px;
   font-style: normal;
-  font-weight: var(--headings-font-weight);
-
+  font-variation-settings: var(--headings-font-weight);
 }
 
 .card__item {
@@ -209,8 +209,8 @@
   z-index: 1;
   font-size: 14px;
   font-style: normal;
-  font-weight: var(--page-main-font-weight);
-  font-family: var( --fantasy-font-family);
+  font-variation-settings: var(--page-main-font-weight);
+  font-family: var(--fantasy-font-family);
   text-transform: uppercase;
   color: var(--text-color);
   opacity: 0.5;
@@ -228,10 +228,10 @@
   color: var(--text-color);
   font-size: 18px;
   font-style: normal;
-  font-weight: var(--page-main-font-weight);
+  font-variation-settings: var(--page-main-font-weight);
 }
 
-.card__text:nth-child(2) {
+.card__text:not(:first-child) {
   margin-block-start: 27px;
 }
 
@@ -249,8 +249,8 @@
 }
 
 .button {
-  font-family: var( --fantasy-font-family);
-  font-weight: var(--page-main-font-weight);
+  font-family: var(--fantasy-font-family);
+  font-variation-settings: var(--page-main-font-weight);
   font-size: 14px;
   position: relative;
   overflow: hidden;
@@ -284,7 +284,7 @@
   mix-blend-mode: difference;
   font-size: 14px;
   font-style: normal;
-  font-weight: var(--page-main-font-weight);
+  font-variation-settings: var(--page-main-font-weight);
   line-height: 90%;
   max-width: 266px;
 }
@@ -310,21 +310,25 @@
   background-color: var(--page-background-color);
   max-width: 335px;
 }
+
 .button__save svg {
   position: relative;
   block-size: 21px;
   mix-blend-mode: difference;
   fill: var(--text-color)
 }
-@media (width < 500px){
-  .button__save{
+
+@media (width < 500px) {
+  .button__save {
     width: 306px;
     flex-direction: column;
   }
+
   .button__save svg {
     block-size: 28px;
   }
 }
+
 .card__icon-button {
   padding: 0;
   width: 39px;
@@ -333,7 +337,7 @@
   border: 2px solid transparent;
   cursor: pointer;
   padding-top: 2px;
-  transition: border 0.3s ease;
+  transition: outline 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -349,7 +353,7 @@
 
 /* popup */
 .popup {
-  font-family: var( --fantasy-font-family);
+  font-family: var(--fantasy-font-family);
   font-size: 14px;
   color: var(--text-color);
   background-color: var(--page-background-color);
