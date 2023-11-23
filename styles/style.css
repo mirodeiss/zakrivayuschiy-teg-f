@@ -405,3 +405,31 @@
     padding: 32px 40px;
   }
 }
+
+
+/* filter */
+.unique-filter-1{
+  filter: grayscale(100%);
+}
+
+.unique-filter-2{
+  filter: sepia(80%);
+}
+.unique-filter-3{
+  filter: saturate(200%);
+}
+.unique-filter-4{
+  filter: brightness(150%)
+}
+.unique-filter-5{
+  filter: contrast(200%)
+}
+.unique-filter-6{
+  filter: invert(2%);
+}
+.unique-filter-7{
+  filter: opacity(0.8);
+}
+.unique-filter-8{
+  filter: contrast(200%) saturate(1%);
+}
