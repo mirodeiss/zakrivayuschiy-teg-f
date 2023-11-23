@@ -67,13 +67,13 @@
 .header__logo-title {
   font-family: var(--fantasy-font-family);
   font-style: normal;
-  font-variation-settings: var(--page-main-font-weight);
+  font-weight: var(--page-main-font-weight);
   font-size: clamp(3.063rem, 2.71rem + 1.502vw, 4.063rem);
   padding-block-start: clamp(7.625rem, 7.273rem + 1.502vw, 8.625rem);
 }
 
 .header__text {
-  font-variation-settings: var(--page-main-font-weight);
+  font-weight: var(--page-main-font-weight);
   font-family: var(--fantasy-font-family);
   font-style: normal;
   font-size: clamp(0.875rem, 0.677rem + 0.845vw, 1.438rem);
@@ -176,7 +176,7 @@
   padding: 5px 12px 3px 12px;
   font-size: 18px;
   font-style: normal;
-  font-variation-settings: var(--headings-font-weight);
+  font-variation-settings: 'wght' var(--headings-font-weight), 700;
 }
 
 .card__item {
@@ -216,7 +216,7 @@
   z-index: 1;
   font-size: 14px;
   font-style: normal;
-  font-variation-settings: var(--page-main-font-weight);
+  font-weight: var(--page-main-font-weight);
   font-family: var(--fantasy-font-family);
   text-transform: uppercase;
   color: var(--text-color);
@@ -235,7 +235,7 @@
   color: var(--text-color);
   font-size: 18px;
   font-style: normal;
-  font-variation-settings: var(--page-main-font-weight);
+  font-weight: 'wght' var(--page-main-font-weight), 400;
 }
 
 .card__text:not(:first-child) {
@@ -257,7 +257,7 @@
 
 .button {
   font-family: var(--fantasy-font-family);
-  font-variation-settings: var(--page-main-font-weight);
+  font-weight: var(--page-main-font-weight);
   font-size: 14px;
   position: relative;
   overflow: hidden;
@@ -291,7 +291,7 @@
   mix-blend-mode: difference;
   font-size: 14px;
   font-style: normal;
-  font-variation-settings: var(--page-main-font-weight);
+  font-weight: var(--page-main-font-weight);
   line-height: 90%;
   max-width: 266px;
 }
@@ -409,28 +409,28 @@
 
 
 /* filter */
-.unique-filter-1{
+.unique-filter-grayscale{
   filter: grayscale(100%);
 }
 
-.unique-filter-2{
+.unique-filter-sepia{
   filter: sepia(80%);
 }
-.unique-filter-3{
+.unique-filter-saturate{
   filter: saturate(200%);
 }
-.unique-filter-4{
+.unique-filter-brightness{
   filter: brightness(150%)
 }
-.unique-filter-5{
+.unique-filter-contrast{
   filter: contrast(200%)
 }
-.unique-filter-6{
+.unique-filter-invert{
   filter: invert(2%);
 }
-.unique-filter-7{
+.unique-filter-opacity{
   filter: opacity(0.8);
 }
-.unique-filter-8{
+.unique-filter-mix{
   filter: contrast(200%) saturate(1%);
 }
