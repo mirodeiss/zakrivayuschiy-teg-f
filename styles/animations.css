@@ -49,13 +49,19 @@
 
 .like-icon .core {
     fill: transparent;
-    transition: fill 0.1 linear;
+    transition: fill .3s .03s linear;
 }
 
 .like-icon .main-body {
     fill: transparent;
     transition: fill .3s linear;
 }
+.like-icon .contour{
+    fill: var(--heart-core-color);
+    transition: fill 0.1s linear;
+}
+
+
 
 /* hover action */
 .like-icon:hover .core {

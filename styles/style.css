@@ -16,7 +16,7 @@
 
 .page {
   color: var(--text-color, #000000);
-  font-family: var(--page-main-font-family, "Inter", 'Arial', sans-serif);
+  font-family: var(--page-main-font-family, 'Inter-Variable', sans-serif);
   background-color: var(--page-background-color, #ffffff);
   background-image: var(--page-background-image, none);
   background-size: cover;
@@ -176,7 +176,7 @@
   padding: 5px 12px 3px 12px;
   font-size: 18px;
   font-style: normal;
-  font-variation-settings: 'wght' var(--headings-font-weight), 700;
+  font-variation-settings: 'wght' var(--headings-font-weight, 700);
 }
 
 .card__item {
@@ -235,7 +235,7 @@
   color: var(--text-color);
   font-size: 18px;
   font-style: normal;
-  font-weight: 'wght' var(--page-main-font-weight), 400;
+  font-weight: 'wght' var(--page-main-font-weight, 400);
 }
 
 .card__text:not(:first-child) {
